@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="/public/main.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="header-ul">
+                <li class="header-ul__listItems"><a href="/login" class="active">Home</a> </li>
+                <li class="header-ul__listItems"><a href="/">Chat</a></li>
+                <li class="header-ul__listItems"><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="/" method="POST"
+        onsubmit='document.getElementById("username").value = localStorage.getItem("username")' class="main-form">
+        <div class="form-input">
+            <input type="text" name="message" placeholder="Enter message" class="input-field">
+            <input type="hidden" name="userName" id = "username">
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</body>
+
+</html>

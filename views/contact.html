@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/public/main.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="header-ul">
+                <li class="header-ul__listItems"><a href="/login" class="active">Home</a> </li>
+                <li class="header-ul__listItems"><a href="/">Chat</a></li>
+                <li class="header-ul__listItems"><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="from-container">
+        <form action="/success">
+           <div class="text-container">
+            <h2>Book a call</h2>
+            <p>Book a call slot and our repersentative will call you within 1hr of selected time</p>
+           </div>
+           <hr width="95%">
+           <div class="feild-conatainer">
+            <label for="name-feild">Name:</label>
+            <input type="text" id="name-feild" name="name">
+            <label for="email-feild">Email:</label>
+            <input type="email" id="email-feild" name="email">
+            <label for="phone-feild">Phone:</label>
+            <input type="number" id="phone-feild" name="phoneNumber">
+            <input type="time" id="time-feild">
+            <input type="date" id="date-feild">
+            <button type="submit" id="get-a-call">GET A CALL</button>
+           </div>
+          
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+    background-color: rgb(56, 41, 121);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header-ul__listItems{
+    margin: 1.2rem;
+    padding: 0;
+    list-style: none;
+}
+
+.header-ul__listItems a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.header-ul__listItems a:hover{
+    color: aquamarine;
+}
+
+.header-ul__listItems a:active{
+    color: red;
+}
+
+.main-nav{
+    margin: 0;
+    padding: 0; 
+}
+
+.header-ul{
+    margin: 0;
+    padding: 0; 
+    display: flex;
+}
+
+.main-form{
+    width: 90%;
+    margin: auto;
+}
+
+.form-input{
+    margin: 1rem 0;
+
+}
+.input-field{
+    width: 15rem;
+    height: 1.3rem;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+button{
+border: 1px solid black;
+border-radius: 2px;
+width: 5rem;
+height: 1.3rem;
+background-color: rgb(37, 19, 41);
+color: white;
+}
+
+.from-container{
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+
+.text-container{
+    text-align: center;
+}
+
+.feild-conatainer{
+    width: 90%;
+    margin: auto;
+}
+
+#name-feild{
+    width: 90%;
+    display: block;
+}
+
+#email-feild{
+    width: 90%;
+    display: block;
+}
+#phone-feild{
+    width: 90%;
+    display: block;
+}
+#time-feild{
+    width: 45%;
+    margin: 1rem 0;
+}
+#date-feild{
+    width: 45%;
+}
+#get-a-call{
+    width: 90%;
+    margin-bottom: 1rem;
+    background-color: rgb(56, 6, 6);
+    color: white;
+}

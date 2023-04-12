@@ -1,17 +1,27 @@
 const express = require("express");
 
-const fs = require("fs");
+const path = require("path")
 
 const bodyParser = require("body-parser");
 
 const loginRouter = require("./routes/login");
 const messageRouter = require("./routes/message");
+const ErrorRouter = require("./routes/error");
+const contactRouter = require("./routes/contact")
+const successRouter = require("./routes/success")
+
 
 const app = express();
+
+app.use(express.static(path.join(__dirname)))
 
 app.use(bodyParser.urlencoded({extended:false}));
 
 app.use(loginRouter);
+app.use(contactRouter);
+app.use(successRouter);
+
 app.use(messageRouter);
+app.use(ErrorRouter);
 
 app.listen(3000);
