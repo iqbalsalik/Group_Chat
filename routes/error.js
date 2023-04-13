@@ -2,12 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
-const path = require("path");
+const errocontroller = require("../controllers/errorController")
 
-const rootDir = require("../util/path")
-
-router.use((req,res,next)=>{
-    res.status(404).sendFile(path.join(rootDir,"views","404.html"))
-})
+router.use(errocontroller.erroPageController)
 
 module.exports = router

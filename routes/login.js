@@ -1,12 +1,11 @@
 const express = require("express");
 
-const path = require("path")
+
+const loginPageController = require("../controllers/loginController")
 
 
 let router = express.Router()
 
-router.use("/login",(req,res,next)=>{
-    res.sendFile(path.join(__dirname,"../","views","login.html"))
-})
+router.use("/login", loginPageController.getLoginPage)
 
 module.exports = router; 
